@@ -1,0 +1,50 @@
+PSEUDO-CLASSES EM LINK
+
+	 Nada mais é do que uma forma da gente estilizar um elemento, 
+	formartar um elemento de css sem depender de uma classe ou de id numa tag HTML,
+	mas sim depedendo de um ESTADO
+
+	PSEUDO-CLASSES
+
+		a:link{...} (estado normla de um link, ou seja, não estou com o mouse sobre esse link, não entrei anteriormente)
+			
+			a:visited{...} (estado visita de a pseudo classe visita de que é uma página que eu já visitei anteriormente, posso ter uma formatação diferente)
+			
+				a:hover{...} ( que é efetivamente quando eu passo o mouse sobre esse link, sobre a área clicável)
+			
+					a:active{...} (quando é eu pressiono o botão do mouse sobre o determindado link)
+
+	ERRO MUITO COMUM: TER UM ESPAÇO, OU ANTES DOIS PONTOS OU DEPOIS DOS DOIS PONTOS.
+			a : link{...} (CORRETO: a:link{...})
+
+AO MENCIONAR O BODY NO STYLE TEM COMO LEITURA A HERANÇA DE TUDO QUE ESTÁ DENTRO DO BODY, SENDO ISSO NÃO É NECESSARIO EDITAR INDIVIDUALMENTE. 
+
+AGORA POR PADRÃO DO BROWSER ELE AUTOMATICAMENTE COLOCAR OS LINKS EM COLORAÇÃO DIFENRENTE, PARA QUE FIQUE EM EVIDENCIA. 
+	PAGINA QUE JÁ VISITAMOS FICA EM DEFAULT (MEIO ARROXEADO)
+
+
+
+	
+	PARA EDITAR NO CSS (STYLE) OS SELETORES TODOS JUNTOS FICARIA ASSIM:
+			h1, a, p{
+					font-family: sans-serif;
+					color: red;
+			        }
+
+
+	a:link { COMO APARECE NA PAGE
+        color: red;
+    }
+
+    a:visited{ DEPOIS QUE CLICA NO LINK
+        color: green;
+    }
+
+    a:hover{ DESTAQUEZIN NO LINK DO SITE
+        background-color: #ccc;
+        
+    }
+
+    a:active{ ALTERA A COLOR AO CLICAR
+        background-color: yellow;
+    }

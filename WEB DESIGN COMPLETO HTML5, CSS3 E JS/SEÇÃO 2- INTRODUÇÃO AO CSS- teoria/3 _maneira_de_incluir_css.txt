@@ -1,0 +1,30 @@
+3 MANEIRAS DE INCLUIR CSS
+
+PARA INCLUIR O CSS DENTRO DO HTML, SEM ABRIR UM CSS
+-DENTRO DA ESTRUTURA HTML:
+
+<head> 
+	<style>
+		p{
+			color: red;
+		}
+
+		a{
+			color: black;
+			text-decoration: none;
+}
+</style>
+</head>
+
+-MODIFICAR A COR DE UM UNICO PARAGRAFO:
+
+    <p style="color:green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsa porro! Quasi excepturi molestiae, soluta quaerat in, corporis, fugit magni ea ullam et vel maiores architecto minus repellendus ipsam fuga.</p>
+
+-LINK: 
+QUE FICA DENTRO DO HEAD
+
+    <link rel="stylesheet" href="introdução_css.css" (MENCIONA O CSS PARA ABRIR O CSS PARA EDITAR)
+
+
+
+

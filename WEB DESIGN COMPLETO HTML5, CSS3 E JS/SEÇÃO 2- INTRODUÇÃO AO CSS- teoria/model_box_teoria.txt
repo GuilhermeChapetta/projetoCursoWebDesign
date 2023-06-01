@@ -1,0 +1,11 @@
+MARGIN AUTO
+
+	O MARGIN AUTO SERVE PARA CENTRALIZAR O TEXTO INDEPENDENTE DE COMO O USUARIO IRÁ UTILIZAR A PRAGINA
+
+	 h1{
+        background-color: yellow;
+        /*margin: 50px;*/
+        width: 200px;
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;

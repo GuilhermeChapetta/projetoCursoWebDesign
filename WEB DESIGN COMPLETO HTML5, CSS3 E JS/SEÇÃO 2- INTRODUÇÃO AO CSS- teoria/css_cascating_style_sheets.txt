@@ -1,0 +1,222 @@
+CSS- CASCATING STYLE SHEETS
+
+UMA PÁGINA SEM CSS, ELA ESTÁ CURA, SEM IDENTIDADE VISUAL.
+
+UMA PÁGINA COM CSS, TERÁ UMA IDENTIDADE VISUAL MAIS COMPLETA, COM INTERAÇÃO VISUAL COM O USUÁRIO.
+	
+	ONDE IREMOS MEXER COM:
+					FONTE, CORES, ESTILO...
+
+
+SINTAXE DO CSS:
+	seletor { propriedade: valor;}
+	 regra      declaração
+
+	seletor- qual é elemento lá do HTML quero formatar
+	{}- dentro da chaves, tenho propriedade, valor e ;(não esquecer desse ; no final !!!NÃO IRÁ FUNCIONAR!!!)  
+
+ex pratico:
+	seletor { propriedade: valor;)
+	h1 {color: red;}
+
+			nesse caso: h1 é o seletor
+					color é a propriedade
+					valor é o red
+UMA REGRA DE CSS PODE SER FORMADA POR MAIS DE UMA DECLARAÇÃO
+
+ex pratico:
+	h1{
+		color: red;
+		font-size: 16px;
+	}
+
+COMO INCLUIR:
+
+	INLINE - <p style="...">...</p> (o que tiver dentro desse paragrafo será editado por essa regra cita)
+			<p style= "color: red"> Bom dia!</p> (isso é feito para um unico paragrafo, se tiver que mudar será feito manualmente) (para fazer web site e aplicações é 											melhor evitar esse atributo, ou melhor nunca vai utilizar esse atributo style)
+ 
+	INTERNO -  <style>...</style> (tudo que estiver dentro do style será interpretado pelo browser como CSS)
+
+
+	EXTERNO - <link href=".css" rel="stylesheet">(!!! O MAIS USADO E RECOMENDADO!!!) (a partir disso, criamos um arquivo de CSS externo que será linkado nos arquivos HTML 																esse arquivo de CSS)
+
+Estilo inline-
+ex pratico: 
+	<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+
+	</head>
+	<body>
+		<p> style="color: red;"> Estilo inline</p>
+	</body>
+	</html>
+
+
+Estilo interno-
+ex pratico:
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<head>
+		<style>
+			p{
+				color: red;
+			}
+	</head>
+	<body>
+		<p> Estilo interno</p>
+	</body>
+	</html>
+
+		
+
+Estilo externo-
+ex pratico:
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<head>
+		<link rel="stylesheet" href="estilo.css">
+		
+	</head>
+	<body>
+		<p> Estilo externo</p>
+	</body>
+	</html>
+
+		p{
+			color: red;
+		}
+
+
+SELETORES DE ELEMENTO
+
+	HTML
+		<p>...</p>
+	Atributo especial no HTML chamado Class (P/ editar o paragrafo)
+		<p class="minha-classe">...</p>
+
+
+	CSS
+		p{...}
+	Atributo classe vai se iniciar com um . (P/ editar o paragrafo)
+		.minha-classe{...}
+
+!!! SE TENHO NO HTML A CLASSE 'ABACAXI' A MESMA DEVE REPETIR NO CSS
+
+
+SELETORES DE ID
+
+	HTML
+	(pode adicionar um valor para o ID para selecionar o atributo ID no HTML)
+		<p id="meu-id">...</p>
+
+	CSS
+		#meu-id {...}
+
+	Quando estou falando de classe e ID, entenda como atributo class e atributo id lá no HTML
+		DIFERENÇA ENTRE CLASS E ID 
+
+		ID- deve ser único por página, ou seja, se no meu arquivo HTML eu tenho a ID igual ao meu ID, eu só posso ter um único elemento com este mesmo valor de ID.
+			(SÓ PODE TER UM POR PAGINA, CADA ID É UNICO, COMO O CPF)
+
+		CLASS- TEM REF COMO UM APELIDO OU NOME, PODE TER VARIOS.
+
+FONTS
+
+	font-family- nome das fontes
+	font-size- tamanho das fontes
+	font-style- italico ou não
+	font-weight- negrito ou não (peso da letra)
+		(NÃO EXISTE FONT-COLOR)
+
+
+TEXT
+
+	text-align- direção/ pra direita, esquerda,centralizado ou justificado
+	text-decoration- vai colocar underline(_) e tirar underline ( ), colocar um risco em cima do texto
+	text-indent- serve para definir uma identação no inicio de cada parágrafo (por ex)
+	text-transform- permite colocar um texto em maiúsculo, em minusculo...
+
+COR LUZ
+	R-red
+	G- green
+	B-blue
+	As cores são representadas por codigos com #
+		ex pratico: #FFFFFF(white/branco), #FF0000(red/vermelho) e assim vai.
+
+COLOR & BACKGROUND-COLOR
+(criar algum HTML simples com pelo menos 1 h1/h2 e alguns parágrafos)
+	
+
+IMPLEMENTAÇÃO DO CSS 
+
+	Depois de criar um HTML, vem o CSS para mudar o layout da page.
+
+(texto fake para treino, lorem ipsum)
+
+ex pratico: 
+	
+	<!DOCTYPE html>
+<html lange="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> SIMPLES</title>
+    <meta name="description" content="Descrição interessante da minha page!">
+    <meta name="author" content="Guilherme Chapetta">
+    <meta name="keywords" content="HTML, CSS, JAVASCRITP">
+    <link rel="stylesheet" href="introdução_css.css"> (FAZENDO INTERAÇÃO DO HTML AO CSS)
+</head>
+
+<body>
+    <h1> MINHA PRIMEIRA EDIÇÃO</h1>
+        <p> Até pegar o jeito da coisa, leva tempo. Mas é gratificante ver o resultado no final</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quas recusandae, error facere rerum placeat. Animi velit asperiores minus consequuntur nisi pariatur illo sapiente, non delectus eos eum tenetur, sint perspiciatis consequatur voluptates qui expedita exercitationem excepturi laboriosam vel? Architecto culpa laborum mollitia ab illum a cumque deleniti quo molestias.</p>
+   <hr>
+   <h2> UDEMY: VALE REALMENTE A PENA?</h2>
+   <br>
+   <h3> Udemy: vale realmente a pena?</h3>
+        <p> O curso: WEB DESIGN COMPLETO: HTML5, CSS3 E JS + 5 PROJETOS REAIS</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus suscipit voluptatum cupiditate ratione minus tempora eum quibusdam debitis similique. Tempora deserunt ipsam perspiciatis ipsa mollitia dolorem enim temporibus magni eum, sint, vitae minima perferendis molestiae doloribus est quas maiores. Obcaecati sapiente dolor totam facere, pariatur ratione. Animi laudantium sunt optio temporibus nam dicta reiciendis ipsa, ratione ipsam expedita id praesentium magni unde, sint quasi dolore nisi est, necessitatibus magnam? Sit, molestias doloremque. Consectetur aliquid voluptatum consequatur vero illo ad qui laudantium vitae? Laboriosam vitae, soluta minus tempora cupiditate suscipit enim dolores alias id velit, deleniti, molestias temporibus nisi laudantium?</p>
+</body>
+</html>
+
+	Abrir um new file voltado para CSS
+		A partir do desse feito, vamos selecionar as class que queremos editar
+
+	ex pratico:
+		h1{
+    color: orange; (muda a cor)
+    font-family: Arial, Helvetica, sans-serif; (muda a fonte)
+    font-size: 54px;(muda o tamanho)
+    font-style: italic; (muda a "escrita")
+    
+}
+
+h2{
+    color: purple;
+    font-style: italic;
+    font-size: 48px;
+}
+
+h3{
+    font-size: 38px;
+    text-transform: uppercase; (deixa tudo q/ foi selecionado em 							capslock)
+			  lowercase; (ficará tudo minusculo)
+   }
+
+p{
+    text-indent: 58px; (tamanho da font)
+    font: size 28px;
+    text-align: center; (posição na page)
+    color:black;(cor)
+    font-variant:normal (muda a font)
+   }
+
+   a{
+    text-decoration:none; (tira o underline _ do texto)
+   }

@@ -1,0 +1,67 @@
+PROPRIEDADE DISPLAY
+
+qual é a diferença entre um elemento de bloco e um elemento de nivel de linha? 
+
+	block (bloco)
+
+	significa que alguns elementos, como por exemplo, o parágrafo
+		h1 até o h6, ul, ol, e li.
+		são elementos que vão ocupar toda a largura disponível no seu container, no elemento paie tambem eles vão gerar quebra de linha. 
+		ESSA É A CARACTERÍSTICA PRINCIPAL DE UM ELEMENTO DE NÍVEL DE BLOCO.
+
+	ex:
+	block
+		<p>
+		<h1> ... <h6>
+		<ul>, <ol>, <li>
+	body
+		h1
+_____________________
+		p
+_____________________
+		ul
+			li
+			li
+_____________________
+
+	OS ITENS CITADOS A CIMA SEMPRE VÃO OCUPAR O A LARGURA MÁXIMA DISPONIVEL DA TELA OU DO CONTAINER.
+______________________________________________________________________________________________________________________________________________
+
+	inline (linha)
+
+	significa que eles não gerar quebra de linha, principalmente eles não vão gerar, como no caso dos elementos de nivel de bloco, onde h1, p, por exemplo,
+	que sempre vai ficar um embaixo do outro
+		
+		NO CASO DE ELEMENTOS INLINE, OU SEJA, ELEMENTOS DE LINHA NÃO, ELES VÃO OCUPAR SEMPRE SOMENTE O ESPAÇO NECESSÁRIO PARA CABER O CONTEÚDO, SEJO ASSIM, 
+		NÃO VAI GERAR QUEBRRA DE LINHA.
+
+	ex: 
+	inline
+		<a>
+		<strong>
+		<b>
+		<em>
+		<i>
+
+	p
+________________________________________________
+	texto link/ texto negrito/ texto italico
+
+
+	inline-block
+		
+		em{
+			display: inline-block;
+			padding: 25px;
+		}
+
+		*{
+			display: none; (SERVE PARA ESCONDER ELEMENTOS NA TELA)
+
+		}
+	
+	
+
+		REGRA GERAL É: NUNCA UTILIZE PROPRIEDADES DO BOX MODEL EM ELEMENTOS DE LINHA.
+
+	O DISPLAY NONE REMOVE EFETIVAMENTE O ELEMENTO DO MEU CONTEUDO 

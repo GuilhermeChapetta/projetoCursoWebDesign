@@ -1,0 +1,75 @@
+ESTRUTURA SEMÂNTICA BÁSICA
+
+PARA COMEÇAR UM ARQUIVO HTML, PRECISAMOS INICIA UMA TAG HTML E FECHAR ESTÁ TAG HTML NO NOSSO DOCUMENTO.
+
+DEPOS PRECISAMOS DAS TAGS <HEAD> E <BODY>
+
+	<html>
+
+		<head>
+			<title> titulo da página que fica quandoa abre a pagina </title>
+		</head>
+
+		<body>
+			<!-- conteúdo da página-->
+		</body>
+
+	</html>
+
+EXISTE UM ATRIBUTO CHAMDO "Lang" QUE VAI INDICAR PRA AGENTE DE USUÁRIO, POREXEMPLO: 
+	
+	O GOOGLE CHROME, QUE O TEIRO DE TELE OU ATÉ O MESMO O MOTTO DE BUSCA DO GOOGLE QUE ESTÁ PÁGINA ESTÁ EM PORTUGUES DO BRASIL.
+
+	<html lang="pt-br">
+		<head> 
+			<title> título da página </title>
+			<meta tags> SÃO TAGS QUE REPRESENTAM OU QUE PASSAM INFORMAÇÕES AADICIONAIS E COMO POR EXEMPLO A GENTE TEM EM VÍDEOS, POR EXEMPLO.
+					PODE TER DIVERSAS INFORMAÇÕES, DIGAMOS ASSIM, ESCONDIDAS DO USUÁRIO, MAS QUE ESTARÃO SE COMUNICANDO COM O AGENTE DE USUÁRIO.
+			
+			<link para arquivos externos> TUDO QUE NÃO FAZ PARTE DO CONTEÚDO VISIVEL DA PAGINA, 
+								MAS QUE O BROWSER PRECISA FAZER O DOWLNLOAD PARA JUDAR A RENDERIZAR ESSE CONTEÚDO LÁ DENTRO DO BROWSER DO USUÁRIO
+								
+		</head>
+	</html>
+
+	TUDO DENTRO DA TAG BODY, TEMOS TUDO QUE É PERTINENTE AO CONTÚDO DA PÁGINA. OU SEJA, TUDO QUE O USUÁRIO VAI VER COMO CONTEÚDO DA PÁGINA.
+
+	DOCTYPE
+		<!doctype html> 
+		!!!NÃO É UM TAG HTML!!!
+			MAS SIM É UMA DIRETIVA QUE VAI INFORMAR PARA O AGENTE DE USUÁRIO QUE ESTE ARQUIVO TRATA SE DE UMA ARQUIVO HTML.
+			É MUITO IMPORTANTE QUE COLOQUE ESTÁ DIRETIVA NO INICIO DO SEU ARQUIVO.
+			(NÃO PODE TER NADA ANTES DESSA LINHA (NENHUM ESPAÇO OU UMA LINHA QUEBRADA.
+
+	CHARSET 
+		<meta charset= "uft-8">
+		É UM META TAG, QUE VAI INFORMAR PARA O BROWSER QUAL QUE É A FAMILIA DE CARACTERES.
+			ex: No caso <meta charset="utf-8"> é a familia de caracteres, que vai englobar todos os caracteres especiais, como os acentos e etc...
+		É O MAIS UTILIZADO AO REDOR DO MUNDO!
+
+
+!!!LEMBRE-SE!!!
+	TUDO QUE ESTÁ DENTRO DE <head> SÃO INFORMAÇÕES ADICIONAIS QUE A GENTE VAI PASSAR PARA O BROWSER
+	LINK PARA ARQUIVOS EXTERNOS E UMA DESSAS INFORMAÇÕES É OARA A GENTE INCLUIR, POR EXEMPLO, UM ARQUIVO DE css ou de js, É UTULIZADO ALGUMAS TAGS ESPECÍFICAS.
+
+IMAGENS, ARQUIVOS EXTERNOS E LINKS
+	
+		<a> - vai incluir um conteudo clicavel pelo usuario
+			
+			href -
+			tittle - vai informar ao browser o titulo daquele link (o que fica na aba da pagina)
+		
+		
+		<link> - vai fazer um vinculo do arquivo HTML com um outro arquivo externo
+			href -
+			rel - vai indicar qual o tipo de arquivo está sendo feito esse vinculo, ou uma folha de estilo (style) (css)
+
+		<img> - serve para incluir uma imagem na página
+			
+			src - indica a fonte, o que o browser vai buscar essa imagem para mostrar dentro do HTML
+			alt - que é um texto alternativo, caso a imagem não carregue corretamente, ou algum problema no servidor
+
+		<script>
+			
+			src - indica a fonte, o que o browser vai buscar essa imagem para mostrar dentro do HTML
+

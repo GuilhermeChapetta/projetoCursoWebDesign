@@ -1,0 +1,20 @@
+LIST STYLE
+
+É COMPOSTA POR TRÊS VARIAÇÕES:
+
+	-list-style-type: referente ao bullets em si
+	-list-style-position: que vai indicar se eu quero esse bullet para dentro da lista ou pra fora.
+	-list-style-image: digamos assim, trocar a imagem, mudar a bolinha da lista
+
+POSSO TER SIMPLEMENTE O LIST STYLE E FAZER ALI TODAS OS VALORES, ENTÃO FICARIA
+	- list-style: type position imagem
+	(mais pra frente)
+
+ul- lista não ordebada
+ol- lista ordenada
+
+PARA FORMATAR A LI DA UL PRECISA DE: (nesse caso não precisa de virgula)
+	ul li{ (tudo que ficar dentro de ul li não interfere na ol)
+	}
+
+	logo o espaço entre o ul li significa que é descendente de li.

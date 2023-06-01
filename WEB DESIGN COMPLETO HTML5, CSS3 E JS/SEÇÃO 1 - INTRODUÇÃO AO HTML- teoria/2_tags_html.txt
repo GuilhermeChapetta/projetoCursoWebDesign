@@ -1,0 +1,99 @@
+TAGS HTML
+
+TAGS HTML- É UMA ETIQUETA, UM LABEL, ALGUMA COISA QUE EU CONSIGO MARCAR UM CONTEÚDO E DAR UM SIGNIFICADO.
+	(DAR SIGNIFICADO AO CONTEÚDO).
+		
+		ex: <>...</>
+		para abrir e fechar uma tag.
+
+		<h1> Meu título </h1>
+		<p> Meu parágrafo </p>
+
+TAGS ALINHADAS- PARA AS TAGS FUNCIONAREM COM COERÊNCIA PRECISAM 	SER ALINHADAS.
+	(DE FACIL LEITURA, RESPEITAR SEMPRE A HIERAQUIA TEXTUAL)
+
+	ex: 
+		<p> Texto com <i> itálico</i> aqui</p>
+			(SEMPRE MARCANDO AS FUNÇÕES, AQUI NO CASO AS FUNÇÕES SÃO (PARÁGRAFO E DESTAQUE TEXTUAL)
+
+TEMOS 6 NIVEIS DE TÍTULO
+
+<h1> Meu título </h1>
+<h2> Meu subtítulo</h2>
+<h3> Meu sub subtítulo</h3>
+<h4> Subtítulo do h3</h4>
+<h5> Subtítulo do h4</h5>
+<h6> Subtítulo do h5</h6>
+
+
+DESTAQUE EM TEXTOS
+
+<i> itálico </i> ex: 'O o é um artigo'
+<b> negrito </b> ex: 'Bem-vindo DANIEL!'
+
+<em> itálico semântico </em> ex: Eu AMO lasanha.
+<strong> negrito semâtico </strong> ex: Estamos aprendendo TAGS SEMÊNTICAS.
+
+<mark> destaque especial</mark> ex: 'O céu é AZUL (destaque sublinha a palavra)
+
+LISTAS NÃO ORDENADAS
+
+<ol></ol>= NÃO SÃO VISTA COMO LISTA NÃO ORDENADAS
+<li></li>= SÃO VISTA COMO ITEM DE LISTA
+
+	<ol>(lista ordenada)
+		<li>...</li> (item de lista)
+		<li>...</li>
+		<li>...</li>
+	<ol>
+
+LINK OU ANCÔRA
+
+<a></a>= VAI TORNAR QUE O TEXTO SEJA CLICÁVEL, SENDO ASSIM 	DIRECIONANDO PARA AQUELE LINK.
+		ex: <p> Text com <a> link </a> aqui </p>
+
+	PARA QUE O BROWSER IDENTIFIQUE E SAIBA COMO ABRIR O LINK, 	É NECESSARIO DE ALGUNS 'ATRIBUTOS'	
+
+ATRIBUTOS
+
+<tag atributos='valores'> texto aqui</tag>
+
+A ESCRITA DESSE CÓDIGO FICA ASSIM:
+	ex: 
+		<p> saiba mais sobre <a href="http:\\www....com.br">HTML5</a>visitando nosso blog e seja feliz!</p>
+		<p> saiba mais sobre <a href="http:\\www....com.br"target="_blank">HTML5</a> visitando nosso blog e seja feliz!</p>
+			a "target=_blank"- FAZ QUE ESSE LINK SEJA ABERTO EM OUTRA ABA.
+
+TIPO DE LINKS
+
+<a href="http://www....com.br"> -> link para aba externa
+	SE O VALOR O MEU ATRIBUTO href COMEÇAR COM HTTP, SIGNIFICA QUE ESTOU INDO PARA OUTRA PÁGINA, ESPECIALMENTE HTTP OU HTTPS
+
+<a href="outraPagina.html"> -> 3 paginas, link de uma pagina pra outra
+	SE O MEU VALOR AQUI DO href, ELE SIMPLESMENTE TEM O NOME DO MEU ARQUIVO, SIGNIFICA QUE ESTOU INDO PARA UMA PÁGINA DENTRO DO MEU PRÓPRIO SITE.
+
+<a href="#secao">
+	SE O MEU href, COMEÇA COM #, O QUE É ESSA #? É QUANDO TEM UMA NAVEGAÇAO DENTRO DA MESMA PÁGINA, ex: usando o SCROLL ROLL
+
+<a href="mailto:alguem@server.com">
+
+	QUANDO O USUÁRIO CLICAR AQUI NO VALOR NO CONTEÚDO DESSA TAG, JÁ SEJA ABERTO O PROGRAMA DE EMAIL DO USUÁRIO. (não é recomendado, mas existe, quase não é uso mais)
+
+QUEBRA DE LINHA
+
+<br>- VAI GERAR UMA QUEBRA DE LINHA SEM NENHUM ELEMENTO VISUAL
+	
+<hr> VAI GERAR A QUEBRA DE LINHA, MAS VAI COLOCAR UMA LINHA HORIZONTAL.
+
+RESUMO:
+
+<h1> até <h6>		<ul>
+<p>				- <li>
+<a>				<ol>
+- href			- <li>
+- target			<strong> e <b>
+<br> e <hr>			<em> e <i>
+				<mark>
+
+CÓDIGO PARA DAR ESPAÇO NO BROWSER 
+	&nbsp

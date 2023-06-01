@@ -1,0 +1,115 @@
+WIDTH E HEIGHT
+
+	p{
+		(largura) width: 200px;
+		(altura) height: 150px;
+} RELACIONADO AO BOX DO TEXTO (NO CASO)
+
+
+PADDING
+	p{
+		padding-top:50px;
+		padding-right:40px;
+		padding-bottom:30px;
+		padding-left:20px;
+	} 
+
+	ESSA ORDEM É IMPORTANTE, LEMBRE-SE QUE O RELÓGIO COMEÇA MEIO DIA, COMEÇA O PONTEIRO LÁ EM CIMA, LOGO NO SENTINDO HORÁRIO:
+		-MEIO DIA É TOP
+		-15 HRS É RIGHT
+		-18 HRS É BOTTOM
+		-21 HRS É LEFT
+	
+	UM ATALHO PARA ESSAS 4 PROPRIEDADES 
+	
+		p{ padding: 50px; 40px;30px;20px;}
+
+MARGIN
+	p{
+		margin-top:50px;
+		margin-right:40px;
+		margin-bottom:30px;
+		margin-left:20px;	
+	}
+
+	ESSA ORDEM É IMPORTANTE, LEMBRE-SE QUE O RELÓGIO COMEÇA MEIO DIA, COMEÇA O PONTEIRO LÁ EM CIMA, LOGO NO SENTINDO HORÁRIO:
+		-MEIO DIA É TOP
+		-15 HRS É RIGHT
+		-18 HRS É BOTTOM
+		-21 HRS É LEFT
+
+	UM ATALHO PARA ESSAS 4 PROPRIEDADES 
+	
+		p{ margin: 50px; 40px;30px;20px;}
+
+ABREVIANDO MARGIN/PADDING
+	
+	p{ margin: 50px 40px 30px 20px; }
+	
+	p{ margin: 50px 40px 30px 40px; }
+
+	p{ margin: 50px 40px 50px 40px; }
+
+	p{ margin: 50px;o2qa }
+
+
+BORDER
+
+	- ESPESSURA 
+	- TIPO DA BORDA
+	- COR DA BORDA
+
+	h1{
+		border-width: 5px; (tamanho)
+		border-style: dotted; (estilo)
+		border-color: red; (cor)
+	}
+TODA ESSAS ESPECIFICAÇÕES DE BORDER PODEM SER ESCRITAS EM UM UNICA LINHA
+	
+	h1{border: 5px dotted red;}
+
+ALGUNS ESTILOS DE BORDER:
+	none- sem
+	hidden- 
+	dotted- pontilhado
+	dashed- traçado
+	solid- linha unica
+	double- duas bordas juntas
+	grove- sombreada
+	ridge- 3d 
+	inset- 3d funda
+	outset- base escura, cima claro
+
+PODE DEFINIR CADA BORDA INDIVIDUALMENTE, OU SEJA, CADA UMA TER A SUA PROPRIA DEFINIÇÃO.
+
+	h1{
+		border-top-style: solid;
+		border-right-width: 5px;
+		border-bottom-color: red;
+		border-left-color: #ff00ff;
+		border-right-color: #f0f;
+		
+}
+
+TODA ESSAS ESPECIFICAÇÕES DE BORDER PODEM SER ESCRITAS EM UM UNICA LINHA
+
+	h1{border-top: 10px solid blue;}
+
+OUTLINE
+
+	É UMA PROPRIEDADE MUITO SIMILIAR AO BORDER, POREM ELA VAI DESENHAR UMA BORDA, SÓ QUE FORA DO ELEMENTO
+
+	O OUTLINE ELE VAI PARRA FORA E O BORDER PARA DENTRO. 
+
+MARGIN AUTO
+
+	O MARGIN AUTO SERVE PARA CENTRALIZAR O TEXTO INDEPENDENTE DE COMO O USUARIO IRÁ UTILIZAR A PRAGINA
+
+	 h1{
+        background-color: yellow;
+        /*margin: 50px;*/
+        width: 200px;
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+

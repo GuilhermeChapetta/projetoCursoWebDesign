@@ -1,0 +1,61 @@
+Estrutura Base
+
+NOVA ARQUIVO(vs code)
+estrutura_base.html
+SEMPRE COMEÇAR COM O HTML
+	
+	<!doctype html> - indica que estamos trabalhando com a ultima versão do html	
+	<html lang="pt-br"> -indica qual lingua estamos usando para para aquilo(que está dentro do <body>)
+		<head>
+			<title> (titulo da pagina)
+			<title> Titulo da Página </title>
+			<meta charset = "utf-8">
+			<meta name="description"(descrição da página) content="descrição legal da minha página">
+			<meta name="author" (assinatura de criação, seu nome) content="Guilherme Chapetta">
+			<meta name="keywords"(palavras chaves dessa paginas, hoje em dia não é tão relevante) contente= "ex: html, css,javascript">			
+		</head>
+		
+		<body>
+			<!-- todo conteudo visivel pelo usuário --> (assim que é feito os comentarios no body)
+			(dentro do bdy vai estar tudo que o usuario irá ver/ interagir)
+			<h1> Titulo principal</h1>
+			<p> Atenção: meta charser serve para indicar qual a codificação de caracteres.</p>
+				(por mais que o meta charser esteja ativo, é muito bom reforçar) (ficará no title)
+
+		</body>
+
+	</html>
+
+O VS CODE tem um sistema de automação de algumas estraturas inicias, para trabalharmos com essas bases.
+		iniciando com !+enter
+		(copia do VS CODE)
+		
+!!! DE ACORDO COM A SUA NECESSIDADE, VAI EDITANDO AS INFORMAÇÕES BASES !!!
+
+EX:	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    			<title>Document</title>
+		</head>
+		<body>
+		    
+		</body>
+		</html>
+
+EX:	editado
+	<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="UTF-8">
+    			<title>Document</title>
+			<meta name="description"(descrição da página) content="descrição legal da minha página">
+			<meta name="author" (assinatura de criação, seu nome) content="Guilherme Chapetta">
+			<meta name="keywords"(palavras chaves dessa paginas, hoje em dia não é tão relevante) contente= "ex: html, css,javascript">	
+		</head>
+		<body>
+		    
+		</body>
+		</html>
